@@ -2,7 +2,7 @@
 //   helpers
 // -------------------------------------
 
-@mixin ir() {
+&ir {
     color: transparent;
     font: 0/0 a;
     text-shadow: none;
@@ -10,12 +10,12 @@
 
 // hide from everything ----------------
 
-@mixin hidden() {
+%hidden {
     display: none !important;
     visibility: hidden;
 }
 
-@mixin visually-hidden() {
+%visually-hidden {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -35,13 +35,13 @@
     }
 }
 
-@mixin invisible {
+%invisible {
     visibility: hidden;
 }
 
 // clearfix ----------------------------
 
-@mixin cf() {
+%cf {
     &:before,
     &:after {
         content: "";

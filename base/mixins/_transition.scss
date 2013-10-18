@@ -1,0 +1,25 @@
+// Cross-browser CSS3 transitions
+
+// @include transition(<values>);
+
+// example
+
+//	.selector {
+//  	@include transition(background 0.3s ease-in);
+//	}
+
+// CSS output
+
+//	.selector {
+//   	-webkit-transition: background 0.3s ease-in;
+//         -moz-transition: background 0.3s ease-in;
+//	         -o-transition: background 0.3s ease-in;
+//  	        transition: background 0.3s ease-in;
+//	}
+
+@mixin transition ($values) {
+    -webkit-transition: $values;
+       -moz-transition: $values;
+         -o-transition: $values;
+            transition: $values;
+}

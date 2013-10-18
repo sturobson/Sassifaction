@@ -1,0 +1,19 @@
+@mixin font-size($size, $margin:yes, $line-height:$doc-line-height) {
+	@if $margin == yes  {
+		font-size: 0px + $size;
+		font-size: 0rem + $size / $doc-font-size;
+		line-height: ceil($size / $doc-line-height) * ($doc-line-height / $size);
+		margin-bottom: 0px + $line-height;
+		margin-bottom: 0rem + ($line-height / $doc-font-size);
+	}
+	@if $margin != yes {
+		font-size: 0px + $size;
+		font-size: $size / $doc-font-size +rem;
+		line-height: ceil($size / $line-height) * ($line-height / $size);
+	}
+}
+
+@mixin font-rem($size) {
+	font-size: 0px + $size;
+	font-size: $size / $doc-font-size +rem;
+}

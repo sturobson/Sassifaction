@@ -1,0 +1,52 @@
+// *** pixeless padding
+
+// vertical and horizontal pixeless padding
+
+@mixin rwdpad($content, $paddingHEIGHT, $paddingWIDTH) {
+  padding: $paddingHEIGHT +px percentage($paddingWIDTH/$content);
+  padding: $paddingHEIGHT/$doc-font-size +rem percentage($paddingWIDTH/$content);
+}
+
+// horizontal pixeless padding
+
+@mixin rwdpadhoz($content, $paddingLEFT, $paddingRIGHT: $paddingLEFT) {
+  padding-left: percentage($paddingLEFT/$content);
+  padding-right: percentage($paddingRIGHT/$content);
+}
+
+// vertical pixeless padding
+
+@mixin rwdpadver($paddingHEIGHT) {
+  padding-top: $paddingHEIGHT +px;
+  padding-top: $paddingHEIGHT/$doc-font-size +rem;
+  padding-bottom: $paddingHEIGHT +px;
+  padding-bottom: $paddingHEIGHT/$doc-font-size +rem;
+}
+
+
+
+// *** pixeless margins
+
+
+// vertical and horizontal pixeless margins
+
+@mixin rwdmar($marginHEIGHT, $marginWIDTH, $content) {
+  margin: $marginHEIGHT +px percentage($marginWIDTH/$content);
+  margin: $marginHEIGHT/$doc-font-size +rem percentage($marginWIDTH/$content);
+}
+
+// horizontal pixeless margins
+
+@mixin rwdmarhoz($content, $marginLEFT, $marginRIGHT: $marginLEFT) {
+  margin-left: percentage($marginLEFT/$content);
+  margin-right: percentage($marginRIGHT/$content);
+}
+
+// vertical pixeless margins
+
+@mixin rwdmarver($marginHEIGHT) {
+  margin-top: $marginHEIGHT +px;
+  margin-top: $marginHEIGHT/$doc-font-size +rem;
+  margin-bottom: $marginHEIGHT +px;
+  margin-bottom: $marginHEIGHT/$doc-font-size +rem;
+}

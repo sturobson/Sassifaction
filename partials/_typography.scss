@@ -1,0 +1,124 @@
+// -------------------------------------
+//   Typography
+// -------------------------------------
+
+// -- overwhemingly specific -----------
+
+html {
+
+}
+
+body {
+
+}
+
+// -- links -----------------------------
+
+a {
+	&:link {
+
+	}
+	&:visited {
+
+	}
+	&:hover {
+
+	}
+	&:active {
+
+	}
+	&:focus {
+
+	}
+}
+
+// copy --------------------------------
+
+p, ul, ol {
+	font-family: $body-font;
+}
+
+// headings ----------------------------
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $header-font;
+}
+
+h1, .alpha{
+
+}
+h2, .beta{
+
+}
+h3, .gamma{
+
+}
+h4, .delta{
+
+}
+h5, .epsilon{
+
+}
+h6, .zeta{
+
+}
+
+// elements ----------------------------
+
+::-moz-selection, ::selection {
+	background-color: $base-color;
+	color: $white; // check this
+}
+
+small,.milli {
+
+}
+
+.giga{
+
+}
+.mega{
+
+}
+.kilo{
+
+}
+
+blockquote {
+
+	&:before {
+
+	}
+}
+
+// scoped typorgraphy
+
+.prose {
+	h1 {
+
+	}
+	h2 {
+
+	}
+	h3 {
+
+	}
+	h4 {
+
+	}
+	h5 {
+
+	}
+	h6 {
+
+	}
+	p {
+
+	}
+	a {
+
+	}
+	li {
+
+	}
+}

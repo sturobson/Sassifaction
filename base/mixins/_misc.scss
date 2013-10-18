@@ -1,0 +1,40 @@
+// inline-block
+
+	@mixin inline-block {
+	  	display: inline-block;
+	  		.lt-ie9 & {
+				zoom: 1;
+				*display: inline;
+	  		}
+	}
+
+// box-sizing with IE fallback and grid lovliness
+
+	@mixin box($width:'null', $padding:'null', $margin:$gutter, $first: false) {
+
+	@if $first == false {
+		float: left;
+		margin-right: 0% + $margin;
+		padding: 0% +$padding;
+		width: 0% + $width - $margin;
+		.lt-ie8 & {
+		  margin-right: 0% + $margin;
+		  padding: 0% + $padding;
+		  width: 0% + $width - $padding - $padding - $margin;
+		}
+	  }
+	  @else {
+		float: left;
+		margin-left: 0% + $first;
+		margin-right: 0% + $margin;
+		padding: 0% +$padding;
+		width: 0% + $width - $margin - $first;
+		.lt-ie7 & {
+		  margin-left: 0% + $first;
+		  margin-right: 0% + $margin;
+		  padding: 0% + $padding;
+		  width: 0% + $width - $padding - $padding - $margin - $first;
+		}
+	  }
+	}
+

@@ -1,0 +1,23 @@
+//==== Example: @include css-triangle ("up", 10px, #fff);
+@mixin css-triangle ($direction: "down", $size: 20px, $color: #000) {
+	width: 0;
+	height: 0;
+	border-left: $size solid #{setTriangleColor($direction, "left", $color)};
+	border-right: $size solid #{setTriangleColor($direction, "right", $color)};
+	border-bottom: $size solid #{setTriangleColor($direction, "bottom", $color)};
+	border-top: $size solid #{setTriangleColor($direction, "top", $color)};
+}
+
+//Utility function to return the relevant colour depending on what type of arrow it is
+@function setTriangleColor($direction, $side, $color) {
+
+	@if $direction == "left" and $side == "right"
+	or  $direction == "right" and $side == "left"
+	or $direction == "down" and $side == "top"
+	or $direction == "up" and $side == "bottom" {
+		@return $color
+	} @else {
+		@return "transparent";
+	}
+
+}

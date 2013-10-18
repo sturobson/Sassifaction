@@ -1,0 +1,27 @@
+// cross-browser CSS3 transforms
+
+// @include transform (<values>);
+
+// example
+
+//	.selector {
+//    	@include transform(rotate(1deg));
+//	}
+
+// CSS output
+
+//	.selector {
+//	    -webkit-transform: rotate(1deg);
+//  	   -moz-transform: rotate(1deg);
+//           -o-transform: rotate(1deg);
+//          -ms-transform: rotate(1deg);
+//              transform: rotate(1deg);
+//	}
+
+@mixin transform ($values) {
+    -webkit-transform: $values;
+       -moz-transform: $values;
+         -o-transform: $values;
+        -ms-transform: $values;
+            transform: $values;
+}

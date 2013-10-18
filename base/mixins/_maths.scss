@@ -1,0 +1,31 @@
+// rem size
+
+@function rem($size) {
+	@return #{$size/$doc-font-size}rem;
+}
+
+// em size
+
+@function em($size) {
+	@return #{$size/$doc-font-size}em;
+}
+
+// rem + px fallback
+
+@mixin remit($propery, $size){
+	#{$propery}: #{$size}px;
+	#{$propery}: #{$size/$doc-font-size}rem;
+}
+
+// making simple squares
+
+@mixin size($width, $height: null) {
+	@if $height == null {
+		width: $width;
+		height: $width;
+	}
+	@else {
+		width: $width;
+		height: $height;
+	}
+}

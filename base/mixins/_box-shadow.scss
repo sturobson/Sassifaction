@@ -1,0 +1,21 @@
+// Cross-browser box shadow
+
+// @include box-shadow(<values>);
+
+// example
+
+//	.selector {
+//  	@include box-shadow(5px 5px 10px 5px #aaa);
+//	}
+
+// CSS output
+
+//	.selector {
+//   	-webkit-box-shadow: 5px 5px 10px 5px #aaa;
+//            	box-shadow: 5px 5px 10px 5px #aaa;
+//	}
+
+@mixin box-shadow ($values) {
+    -webkit-box-shadow: $values; // iOS Safari 3.2 - 4.3, Android 2.1+
+            box-shadow: $values;
+}

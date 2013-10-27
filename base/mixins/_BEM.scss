@@ -1,6 +1,8 @@
-//elements get appended with "__" and the $name
-@mixin e($name) {
-  @at-root   #{&}__#{$name} {
+// edited to my preferred naming convention
+
+//sub-components get appended with "-" and the $name
+@mixin s($name) {
+  @at-root   #{&}-#{$name} {
     @content;
   }
 }

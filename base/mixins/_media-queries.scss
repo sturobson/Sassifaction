@@ -17,15 +17,10 @@ $extra-large    : 1300;
         .lt-ie9 & {
             @content;
         }
-        @media (#{$query1}-#{$query2}: $point / $doc-font-size +em) {
-            @content;
-        }
     }
 
-    @else {
-        @media (#{$query1}-#{$query2}: $point / $doc-font-size +em) {
-            @content;
-        }
+    @media (#{$query1}-#{$query2}: $point / $doc-font-size +em) {
+        @content;
     }
 }
 

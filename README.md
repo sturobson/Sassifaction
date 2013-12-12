@@ -9,4 +9,4 @@
 
 hopefully this will expand over time.
 
-[Milton Keynes Geek Night All Dayer](http://www.alldayer.mkgeeknight.co.uk "MKGN All Dayer")
+[Milton Keynes Geek Night All Dayer](http://alldayer.mkgeeknight.co.uk "MKGN All Dayer")

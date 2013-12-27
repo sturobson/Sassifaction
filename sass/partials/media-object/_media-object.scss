@@ -1,0 +1,36 @@
+/*
+
+Media Objects
+=============
+
+<div class="media">
+	<a class="" href="">
+		<img class="media-object" width="64" src="<!-- @path rock-hammer-1.jpg -->" alt="">
+	</a>
+	<div class="media-body">
+		<h4 class="media-heading"><!-- $title --></h4>
+		<p><!-- $example-short --></p>
+	</div><!-- media-body -->
+</div><!-- media -->
+
+*/
+
+.media {
+
+}
+
+.media-object {
+	> img {
+
+	}
+}
+
+.media-body {
+	> p {
+
+	}
+}
+
+.media-heading {
+
+}

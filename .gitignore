@@ -4,6 +4,8 @@ public/css/main/*.css
 public/css/admin/*.css
 /.monitor
 
+.sass-cache/
+
 # Eclipse
 /.project
 /.settings

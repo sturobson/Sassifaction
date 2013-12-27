@@ -67,6 +67,14 @@
 
 @import "partials/tables/_table.scss";
 
+// Media Object
+
+@import "partials/media-object/_media-object.scss"
+
+// Buttons
+
+@import "partials/buttons/_buttons.scss";
+
 // Forms
 
 @import "partials/forms/_big-form.scss";
@@ -80,9 +88,7 @@
 
 @import "partials/widgets/_widgets.scss";
 
-// Buttons
 
-@import "partials/buttons/_buttons.scss";
 
 //////////////// ******** ////////////////
 

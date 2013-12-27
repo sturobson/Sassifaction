@@ -1,0 +1,58 @@
+/*
+
+## Colors
+
+This is for a color-swatch, requires Compass at the moment.
+
+<ul class="swatch theme-colors">
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+</ul>
+
+*/
+
+.swatch {
+	clear: both;
+	float: left;
+	max-width: 640px;
+	li {
+		border: 1px solid black;
+		border-radius: 8px;
+		float: left;
+		height: 120px;
+		list-style: none;
+		margin: 0 4px 4px 0;
+		width: 120px;
+	}
+}
+
+.theme-colors {
+	li {
+		background-color: $base-color;
+		&:nth-child(2) {
+			background-color: $comp-color;
+		}
+		&:nth-child(3) {
+			background-color: $tertiary-color;
+		}
+		&:nth-child(4) {
+			background-color: $alt-1;
+		}
+		&:nth-child(5) {
+			background-color: $alt-2;
+		}
+		&:nth-child(6) {
+			clear: both;
+			background-color: $white;
+		}
+		&:nth-child(7) {
+			background-color: $black;
+		}
+	}
+}
+

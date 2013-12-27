@@ -1,0 +1,70 @@
+// -------------------------------------
+//    variables
+// -------------------------------------
+
+
+
+// -- max-page-width -------------------
+
+	@mixin page-width{
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+// -- document font declarations -------
+
+	$doc-font-size: 16;
+	$doc-line-height: 24;
+
+// -- branding -------------------------
+
+	$base-color: orange;
+	$comp-color: green;
+	$tertiary-color: red;
+	$alt-1: #777777;
+	$alt-2: #CCCCCC;
+	$white: #FFFFFF;
+	$black: #000000;
+
+// -- typography -----------------------
+
+	$body-font: Georgia, serif;
+	$header-font: $body-font;
+
+// -- links ----------------------------
+
+	$link-color: red;
+	$link-color-hover: darken($link-color, 10);
+	$link-color-visited: $link-color-hover;
+	$link-color-focus: darken($link-color-hover, 10);
+
+// -- errors & info --------------------
+
+	$success-color: #5CB85C;
+	$info-color: #5BC0DE;
+	$warning-color: #F0AD4E;
+	$danger-color: #D9534F;
+
+// -- labels, copy-classes, alerts -----
+
+	$default-color: #999999;
+	$muted-color: #F3F3F3;
+	$primary-color: #428BCA;
+
+// --- selection colours ---------------
+
+	$selection: $link-color;
+	$selection-text: #FFF;
+
+// -- button colors --------------------
+
+	$button-color: $white;
+	$button-bg-color: $base-color;
+
+// -- Border Radius --------------------
+
+	$radius-sml: 4px;
+	$radius-med: 8px;
+	$radius-lrg: 12px;
+
+// -- flow -----------------------------

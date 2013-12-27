@@ -1,0 +1,55 @@
+/*
+
+Scoped Typography
+=================
+
+	<div class="prose">
+		<h1>This is the primary headline</h1>
+        <h2>This is the secondary headline</h2>
+        <h3>This is the tertiary headline</h3>
+        <h4>This is the average headline</h4>
+        <h5>This is the small headline</h5>
+        <h6>This is the micro headline</h6>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ligula non felis fermentum tincidunt. Suspendisse sapien odio, vestibulum euismod metus at, aliquet dapibus purus. Suspendisse lacinia sit amet ante eget gravida.</p>
+
+        <a href="">A link to something</a>
+
+        <ul>
+            <li>A list item</li>
+            <li>A list item</li>
+            <li>A list item</li>
+        </ul>
+    </div>
+
+*/
+
+.prose {
+	h1 {
+		font-family: $header-font;
+	}
+	h2 {
+		font-family: $header-font;
+	}
+	h3 {
+		font-family: $header-font;
+	}
+	h4 {
+		font-family: $header-font;
+	}
+	h5 {
+		font-family: $header-font;
+	}
+	h6 {
+		font-family: $header-font;
+	}
+	p {
+		font-family: $body-font;
+	}
+	a {
+		font-family: $body-font;
+	}
+	li {
+		font-family: $body-font;
+	}
+}

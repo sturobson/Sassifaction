@@ -1,0 +1,35 @@
+/*
+
+Search Forms
+============
+
+	<form action="/" class="search">
+		<fieldset>
+			<input type="text" placeholder="Search" />
+			<button type="submit">Go!</button>
+		</fieldset>
+	</form>
+
+*/
+
+.search {
+
+}
+
+.search fieldset {
+
+}
+
+.search input[type="text"] {
+
+}
+
+.search button {
+
+	&:hover, &:focus {
+
+	}
+	&:active {
+
+	}
+}

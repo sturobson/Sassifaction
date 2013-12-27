@@ -1,0 +1,24 @@
+/*
+
+Body Copy
+========
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ligula non felis fermentum tincidunt. Suspendisse sapien odio, vestibulum euismod metus at, aliquet dapibus purus. Suspendisse lacinia sit amet ante eget gravida.</p>
+
+    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ligula non felis fermentum tincidunt. Suspendisse sapien odio, vestibulum euismod metus at, aliquet dapibus purus. Suspendisse lacinia sit amet ante eget gravida.</p>
+
+*/
+
+p {
+	font-family: $body-font;
+}
+
+/* --- used if wanting to style the first paragraph slightly differently --- */
+.lead {
+
+}
+
+::-moz-selection, ::selection {
+	background-color: $base-color;
+	color: $white; // check this
+}

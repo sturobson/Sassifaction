@@ -1,0 +1,52 @@
+/*
+
+Labels
+======
+
+<h3>Example heading <span class="label label-default">New</span></h3>
+
+<span class="label label-default">Default</span>
+<span class="label label-primary">Primary</span>
+<span class="label label-success">Success</span>
+<span class="label label-info">Info</span>
+<span class="label label-warning">Warning</span>
+<span class="label label-danger">Danger</span>
+
+*/
+
+.label {
+	display: inline;
+	padding: .2em .6em .3em;
+	font-size: 75%;
+	font-weight: bold;
+	line-height: 1;
+	color: #FFF;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: $radius-sml;
+}
+
+.label-default {
+	background-color: $default-color;
+}
+
+.label-primary {
+	background-color: $primary-color;
+}
+
+.label-success {
+	background-color: $success-color;
+}
+
+.label-info {
+	background-color: $info-color;
+}
+
+.label-warning {
+	background-color: $warning-color;
+}
+
+.label-danger {
+	background-color: $danger-color;
+}

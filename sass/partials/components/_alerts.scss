@@ -1,0 +1,54 @@
+/*
+
+Alerts
+=====================
+
+<div class="alert alert-success">
+	<p><strong>Well done!</strong> You successfully read this important alert message.</p>
+</div>
+
+<div class="alert alert-info">
+	<p><strong>Heads up!</strong> This alert needs your attention, but it's not super important.</p>
+</div>
+
+<div class="alert alert-warning">
+	<p><strong>Warning!</strong> Best check yo self, you're not looking too good.</p>
+</div>
+
+<div class="alert alert-danger">
+	<p><strong>Oh snap!</strong> Change a few things up and try submitting again.</p>
+</div>
+
+*/
+
+.alert {
+	padding: $doc-font-size;
+	@include remit(margin-bottom, $doc-line-height);
+	border: 1px solid rgba(0, 0, 0, 0);
+	border-radius: $radius-sml;
+}
+
+.alert-success {
+	background-color: $success-color;
+	& > p {
+		color: darken($success-color, 30%);
+	}
+}
+.alert-info {
+	background-color: $info-color;
+	& > p {
+		color: darken($info-color, 30%);
+	}
+}
+.alert-warning {
+	background-color: $warning-color;
+	& > p {
+		color: darken($warning-color, 30%);
+	}
+}
+.alert-danger {
+	background-color: $danger-color;
+	& > p {
+		color: darken($danger-color, 30%);
+	}
+}

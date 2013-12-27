@@ -1,0 +1,19 @@
+/*
+
+Wells
+=====
+
+<div class="well">
+	<p>This is a well</p>
+</div>
+
+*/
+
+.well {
+	padding: $doc-font-size;
+	@include remit(margin-bottom, $doc-line-height);
+	background-color: $white;
+	border: 1px solid $black;
+	border-radius: $radius-sml;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}

@@ -1,0 +1,125 @@
+/*
+
+Forms
+=====
+
+<form action="/">
+	<fieldset>
+		<label for="name">Name</label>
+		<input type="text" id="name" class="form-text" />
+		<p class="form-help">This is help text under the form field.</p>
+		<label for="email">Email</label>
+		<input type="email" id="email" class="form-text" />
+	</fieldset>
+	<fieldset>
+		<label for="gender">Gender</label>
+		<select id="gender">
+			<option>Male</option>
+			<option>Female</option>
+			<option>Cylon</option>
+		</select>
+	</fieldset>
+	<fieldset class="radio">
+		<label for="notifications">Notifications</label>
+		<ul>
+			<li><label><input type="radio" name="notifications" /> Send me email</label></li>
+			<li><label><input type="radio" name="notifications" /> Don't send me email</label></li>
+			<li><label><input type="radio" name="notifications" /> Send me flowers</label></li>
+		</ul>
+	</fieldset>
+	<fieldset>
+		<label for="url">URL</label>
+		<input type="url" id="url" class="form-text" placeholder="http://yourdomain.com" />
+	</fieldset>
+	<fieldset>
+		<label for="bio">Bio</label>
+		<textarea id="bio"></textarea>
+	</fieldset>
+	<fieldset class="check">
+		<label><input type="checkbox" /> I accept the terms of service and lorem ipsum.</label>
+	</fieldset>
+	<fieldset class="form-actions">
+		<button type="submit">Submit</button>
+	</fieldset>
+</form>
+
+*/
+
+
+form {
+
+}
+
+fieldset {
+
+}
+
+label {
+
+}
+input {
+
+}
+input[type="text"] {
+
+}
+input[type="email"] {
+
+}
+input[type="checkbox"] {
+
+}
+input[type="radio"] {
+
+}
+
+select {
+
+}
+
+option {
+
+}
+textarea {
+
+}
+
+.radio {
+	> ul {
+
+	}
+
+	> ul > li {
+
+	}
+
+	label {
+
+	}
+
+	input {
+
+	}
+}
+.check {
+	label {
+
+	}
+
+	input {
+
+	}
+}
+.form-actions {
+	button {
+
+		&:hover, &:focus {
+
+		}
+
+		&:active {
+
+		}
+	}
+}
+

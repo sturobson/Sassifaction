@@ -1,0 +1,58 @@
+@function colorize($color, $change: n) {
+  @if $change == l1 {
+    @return tint($color, 20%);
+  }
+  @else if $change == l2 {
+    @return tint($color, 40%);
+  }
+  @else if $change == l3 {
+    @return tint($color, 60%);
+  }
+  @else if $change == l4 {
+    @return tint($color, 80%);
+  }
+  @else if $change == d1 {
+    @return tint($color, 20%);
+  }
+  @else if $change == d2 {
+    @return tint($color, 40%);
+  }
+  @else if $change == d3 {
+    @return tint($color, 60%);
+  }
+  @else if $change == d4 {
+    @return tint($color, 80%);
+  }
+  @else {
+    @return ($color)
+  }
+}
+
+@function trans($color, $percentage) {
+  @return lighten($color, (1-$percentage)*5%);
+}
+@function transd($color, $percentage) {
+  @return darken($color, (1-$percentage)*5%);
+}
+@mixin tran($type, $color, $percentage, $shade: ligthen) {
+  @if $shade == lighten {
+    @if $type == color {
+      color: trans($color, $percentage);
+      color: rgba($color, $percentage);
+    }
+    @if $type == bg {
+      background-color: trans($color, $percentage);
+      background-color: rgba($color, $percentage);
+    }
+  }
+  @else {
+     @if $type == color {
+      color: transd($color, $percentage);
+      color: rgba($color, $percentage);
+    }
+    @if $type == bg {
+      background-color: transd($color, $percentage);
+      background-color: rgba($color, $percentage);
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "autoPrefixer": {
+    "active": true,
+    "browsers": [
+      "last 1 version",
+      "> 1%",
+      "ie 8",
+      "ie 7"
+    ]
+  },
+  "convertHtmlOutput": null,
+  "customRubyPath": null,
+  "debug": false,
+  "domain": null,
+  "followLeader": false,
+  "ignoreDir": "js",
+  "lintScripts": false,
+  "modelSource": null,
+  "preprocessorLocations": "sass,css",
+  "preprocessorScriptOutput": "javascript",
+  "preprocessorStyleOutput": "css",
+  "projectDescription": "My project description",
+  "projectName": "Sassifaction v2",
+  "publishedId": null,
+  "sass": {
+    "outputStyle": "nested",
+    "sourceMap": false,
+    "cache": false,
+    "lineNumbers": false,
+    "debugInfo": false,
+    "globbing": false
+  },
+  "serverHostname": null,
+  "serverPort": null,
+  "simpleModePartnerServer": null,
+  "templateDefaultLayout": "layout",
+  "templateDefaultPage": "index",
+  "templateDirectory": "templates",
+  "type": "simple",
+  "useCompass": false
+}

@@ -1,0 +1,40 @@
+// media query 'major breakpoint' variables
+
+$tiny           :  320;
+$smaller        :  480;
+$small          :  600;
+$medium         :  760;
+$regular        :  900;
+$large          : 1100;
+$extra-large    : 1300;
+
+
+
+// Media Query Mixin for min/max/min-device and max-device width or height
+
+@mixin mq($point, $IE9: false, $query1: min, $query2: width) {
+    @if $IE9 == true{
+        .lt-ie9 & {
+            @content;
+        }
+        @media (#{$query1}-#{$query2}: $point / $doc-font-size +em) {
+            @content;
+        }
+    }
+
+    @else {
+        @media (#{$query1}-#{$query2}: $point / $doc-font-size +em) {
+            @content;
+        }
+    }
+}
+
+
+
+// Orientation Media Query Mixin
+
+@mixin orient($orientation: landscape) {
+    @media (orientation : $orientation) {
+        @content;
+    }
+}

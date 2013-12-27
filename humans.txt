@@ -1,0 +1,23 @@
+/* TEAM */
+
+Your title: Stuart Robson.
+
+Site: www.alwaystwisted.com, stu@alwaystwisted.com.
+
+Twitter: @sturobson.
+
+Location: Salisbury, Wiltshire, United Kingdom.
+
+
+/* THANKS */
+
+I've begged and borrowed from other open-source projects to create a Sass library that'd work for me.
+
+So it's all #codelicious
+
+Names of OSS projects that have been amalgamated: Twitter Bootstrap, Inuit 5.0,
+
+
+/* SITE */
+
+Last update: 2013/12/27

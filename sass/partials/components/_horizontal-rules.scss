@@ -1,0 +1,45 @@
+/*
+
+Horizontal Rules
+=====================
+
+<hr class="rule">
+<hr class="rule rule--dotted">
+<hr class="rule rule--dashed">
+<hr class="rule rule--ornament">
+
+*/
+
+.rule{
+    color: pink;
+    border:none;
+    border-bottom-width:1px;
+    border-bottom-style:solid;
+    @include remit(margin-bottom, $doc-line-height);
+}
+
+.rule--dotted{
+    border-bottom-style:dotted;
+}
+
+.rule--dashed{
+    border-bottom-style:dashed;
+}
+
+.rule--ornament{
+    position:relative;
+
+    &:after{
+        content:"\00A7";
+        position:absolute;
+        top:   0;
+        right: 0;
+        left:  0;
+        line-height:0;
+        text-align:center;
+    }
+
+    &[data-ornament]:after{
+        content:attr(data-ornament);
+    }
+}

@@ -1,0 +1,43 @@
+/*
+
+Main Navigation
+===============
+
+    <nav class="main-nav" role="navigation">
+        <ul class="main-nav-list">
+            <li class="main-nav-item"><a class="main-nav-link" href="">A main link</a></li>
+            <li class="main-nav-item"><a class="main-nav-link" href="">A main link</a></li>
+            <li class="main-nav-item"><a class="main-nav-link" href="">A main link</a></li>
+            <li class="main-nav-item"><a class="main-nav-link" href="">A main link</a></li>
+        </ul>
+    </nav>
+
+*/
+
+nav[role="navigation"] {
+	> ul {
+
+	}
+	li {
+
+	}
+	a {
+
+	}
+}
+
+.main-nav {
+
+}
+
+.main-nav-list {
+
+}
+
+.main-nav-item {
+
+}
+
+.main-nav-link {
+
+}

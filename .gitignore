@@ -52,4 +52,4 @@ css/
 sftp-config*.json
 
 
-*.json
+mixture.json

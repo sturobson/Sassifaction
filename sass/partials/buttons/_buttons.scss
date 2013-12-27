@@ -1,0 +1,137 @@
+// -------------------------------------
+//   beuticons
+// -------------------------------------
+
+
+// beautons is a beautifully simple button toolkit.
+//
+// Copyright 2013 Harry Roberts
+
+
+
+// - BASE -----------------------------
+
+@mixin btn{
+	display:inline-block;
+	vertical-align:middle;
+	white-space:nowrap;
+	font-family:inherit;
+	font-size:100%;
+	cursor:pointer;
+	border:none;
+	margin:0;
+	background-color: $button-bg-color;
+	color: $button-color;
+	border-radius:4px;
+	overflow:visible;
+	text-decoration: none;
+	&:hover, &:active, &:focus, &:visited {
+		text-decoration: none;
+	}
+	&:hover{
+		box-shadow:0 0 5px rgba(0, 0, 0, 0.5);
+	}
+	&:active, &:focus {
+		outline:none;
+		box-shadow:0 0 5px rgba(0, 0, 0, 0.5) inset;
+	}
+	&::-moz-focus-inner {
+		border: 0;
+		padding: 0;
+	}
+}
+@mixin btn-norm {
+	line-height:3;
+	height: 3em;
+	padding: 0 1em;
+}
+
+// - SIZES ----------------------------
+
+@mixin btn--small{
+	padding: 0 0.5em;
+	line-height:2;
+	height:     2em;
+}
+
+@mixin btn--large{
+	padding: 0 1.5em;
+	line-height:4;
+	height:     4em;
+}
+
+@mixin btn--huge{
+	padding: 0 2em;
+	line-height:5;
+	height:     5em;
+}
+
+@mixin btn--full{
+	width:100%;
+	padding-right:0;
+	padding-left: 0;
+	text-align:center;
+}
+
+// - FONT SIZES -----------------------
+
+@mixin btn--alpha{
+	font-size:3rem;
+}
+
+@mixin btn--beta{
+	font-size:2rem;
+}
+
+@mixin btn--gamma{
+	font-size:1rem;
+}
+
+
+@mixin btn--natural{
+	vertical-align:baseline;
+	font-size:inherit;
+	line-height:inherit;
+	height:auto;
+	padding-right:0.5em;
+	padding-left: 0.5em;
+}
+
+// - FUNCTIONS ------------------------
+
+@mixin btn--primary{}
+@mixin btn--secondary{}
+@mixin btn--tertiary{}
+
+
+@mixin btn--positive{
+	background-color:#4A993E;
+	color:#fff;
+}
+
+@mixin btn--negative{
+	background-color:#b33630;
+	color:#fff;
+}
+
+@mixin btn--inactive{
+	&:hover,
+	&:active,
+	&:focus{
+		background-color:#ddd;
+		color:#777;
+		cursor:default;
+		box-shadow:none;
+	}
+}
+
+// - STYLES ---------------------------
+
+
+@mixin btn--soft{
+	border-radius:5em;
+}
+
+@mixin btn--hard{
+	border-radius:0;
+}

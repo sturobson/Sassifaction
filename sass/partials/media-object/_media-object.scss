@@ -5,13 +5,13 @@ Media Objects
 
 <div class="media">
 	<a class="" href="">
-		<img class="media-object" width="64" src="<!-- @path rock-hammer-1.jpg -->" alt="">
+		<img class="media-object" src="" alt="">
 	</a>
 	<div class="media-body">
-		<h4 class="media-heading"><!-- $title --></h4>
-		<p><!-- $example-short --></p>
-	</div><!-- media-body -->
-</div><!-- media -->
+		<h4 class="media-heading"></h4>
+		<p></p>
+	</div>
+</div>
 
 */
 
@@ -20,9 +20,7 @@ Media Objects
 }
 
 .media-object {
-	> img {
 
-	}
 }
 
 .media-body {

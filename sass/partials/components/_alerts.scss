@@ -22,32 +22,37 @@ Alerts
 */
 
 .alert {
-	padding: $doc-font-size;
 	@include remit(margin-bottom, $doc-line-height);
+
 	border: 1px solid rgba(0, 0, 0, 0);
 	border-radius: $radius-sml;
+	padding: $doc-font-size;
 }
 
 .alert-success {
 	background-color: $success-color;
+
 	& > p {
 		color: darken($success-color, 30%);
 	}
 }
 .alert-info {
 	background-color: $info-color;
+
 	& > p {
 		color: darken($info-color, 30%);
 	}
 }
 .alert-warning {
 	background-color: $warning-color;
+
 	& > p {
 		color: darken($warning-color, 30%);
 	}
 }
 .alert-danger {
 	background-color: $danger-color;
+
 	& > p {
 		color: darken($danger-color, 30%);
 	}

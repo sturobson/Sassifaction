@@ -20,7 +20,7 @@ html {
     box-sizing: border-box;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
     display: block;
 }
 
@@ -64,7 +64,7 @@ a:hover {
 //   Typography
 // -------------------------------------
 
-hgroup, ul, ol, dd, menu, dl, figure, pre, table, fieldset, legend, hr,
+ul, ol, dd, menu, dl, figure, pre, table, fieldset, legend, hr,
 h1, h2, h3, h4, h5, h6, p, a
 { margin: 0; padding: 0; }
 

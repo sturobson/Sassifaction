@@ -1,0 +1,89 @@
+// Creates IE7 and below specific widths as the library uses box-sizing: border-box;
+// note it requires a conditional CSS comment to add a class to the <HTML>
+
+@mixin IE7Padding($width: null, $unit: px, $paddingLeft: 0, $paddingRight: 0) {
+  @if $unit == px {
+    @if $paddingLeft == 0 and $paddingRight != 0 {
+      padding-right: $paddingRight + 0px;
+      width: $width + 0px;
+      .lt-ie8 & {
+        padding-right: $paddingRight + 0px;
+        width: ($width - $paddingRight) + 0px;
+      }
+    }
+    @else if $paddingRight == 0 and $paddingLeft != 0 {
+      padding-left: $paddingLeft + 0px;
+      width: $width + 0px;
+      .lt-ie8 & {
+        padding-left: $paddingLeft + 0px;
+        width: ($width - $paddingLeft) + 0px;
+      }
+    }
+    @else {
+      padding-left: $paddingLeft + 0px;
+      padding-right: $paddingRight + 0px;
+      width: $width + 0px;
+      .lt-ie8 & {
+        padding-left: $paddingLeft + 0px;
+        padding-right: $paddingRight + 0px;
+        width: ($width - $paddingLeft - $paddingRight) + 0px;
+      }
+    }
+  }
+  @else if $unit == percentage {
+    @if $paddingRight == 0 and $paddingLeft != 0 {
+      padding-left: $paddingLeft + 0%;
+      width: $width + 0%;
+      .lt-ie8 & {
+        padding-left: $paddingLeft + 0%;
+        width: ($width - $paddingLeft - $paddingRight) + 0%;
+      }
+    }
+    @else if $paddingLeft == 0 and $paddingRight != 0 {
+      padding-right: $paddingRight + 0%;
+      width: $width + 0%;
+      .lt-ie8 & {
+        padding-right: $paddingRight + 0%;
+        width: ($width - $paddingRight) + 0%;
+      }
+    }
+    @else {
+      padding-left: $paddingLeft + 0%;
+      padding-right: $paddingRight + 0%;
+      width: $width + 0%;
+      .lt-ie8 & {
+        padding-left: $paddingLeft + 0%;
+        padding-right: $paddingRight + 0%;
+        width: ($width - $paddingLeft - $paddingRight) + 0%;
+      }
+    }
+  }
+  @else {
+    @if $paddingRight == 0 and $paddingLeft != 0 {
+      padding-left: $paddingLeft + 0em;
+      width: $width + 0%;
+      .lt-ie8 & {
+        padding-left: $paddingLeft + 0%;
+        width: ($width - $paddingLeft - $paddingRight) + 0%;
+      }
+    }
+    @else if $paddingLeft == 0 and $paddingRight != 0 {
+      padding-right: $paddingRight + 0%;
+      width: $width + 0%;
+      .lt-ie8 & {
+        padding-right: $paddingRight + 0%;
+        width: ($width - $paddingRight) + 0%;
+      }
+    }
+    @else {
+      padding-left: $paddingLeft + 0%;
+      padding-right: $paddingRight + 0%;
+      width: $width + 0%;
+      .lt-ie8 & {
+        padding-left: $paddingLeft + 0%;
+        padding-right: $paddingRight + 0%;
+        width: ($width - $paddingLeft - $paddingRight) + 0%;
+      }
+    }
+  }
+}

@@ -7,7 +7,7 @@
     ////////////////////////
 
     // if you a line-height is specified in the mixin
-    @if $line-height != $doc-line-height {
+    @if $line-height != $doc-line-height and $line-height != 1 {
       line-height: round($line-height / $size*10000) / 10000;
     }
 

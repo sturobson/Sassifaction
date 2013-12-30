@@ -8,7 +8,7 @@
 
     // if you a line-height is specified in the mixin
     @if $line-height != $doc-line-height {
-      line-height: ceil($doc-line-height / $line-height) * ($line-height / $doc-line-height);
+      line-height: round($line-height / $size*10000) / 10000;
     }
 
     // if $line-height == 1
@@ -20,7 +20,7 @@
     // normal $line-height
     // if the line-height is left.
     @else {
-      line-height: ceil($size / $doc-line-height) * ($doc-line-height / $size);
+      line-height: round($line-height / $size*10000) / 10000;
     }
 
     // margin-bottom functions

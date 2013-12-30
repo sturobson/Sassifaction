@@ -1,117 +1,121 @@
-// Mixins
+	// Mixins
 	@import "base/_mixins.scss";
 
-// CSS Font Stacks
+	// CSS Font Stacks
 
 	@import "base/_fonts.scss";
 
-// Variables
+	// Variables
 	@import "_variables.scss";
 
-// Normalize
+	// Normalize
 	@import "base/_bizarro.scss";
 
-// Helpers
+	// Helpers
 	@import "base/_helpers.scss";
 
-// -------------------------------------
-//   import the partials
-// -------------------------------------
+	// -------------------------------------
+	//   import the partials
+	// -------------------------------------
 
-@import "partials/layout/_base.scss";
+	// Images
 
-// import color swatch
+//	@import "partials/images/_images.scss";
+//	@import "partials/images/_base64.scss";
+	@import "partials/images/_figure.scss";
 
-@import "partials/colors/_colors.scss";
+	// import color swatch
 
-// import layout
+//	@import "partials/colors/_colors.scss";
 
-@import "partials/layout/_grids.scss";
-@import "partials/layout/_base.scss";
-@import "partials/layout/_header.scss";
-@import "partials/layout/_main.scss";
-@import "partials/layout/_aside.scss";
-@import "partials/layout/_footer.scss";
+	// import layout
 
-// import typography
+	@import "partials/layout/_grids.scss";
+	@import "partials/layout/_base.scss";
+	@import "partials/layout/_header.scss";
+	@import "partials/layout/_main.scss";
+	@import "partials/layout/_aside.scss";
+	@import "partials/layout/_footer.scss";
 
-@import "partials/typography/_headings.scss";
-@import "partials/typography/_body-copy.scss";
-@import "partials/typography/_copy-classes.scss";
-@import "partials/typography/_links.scss";
-@import "partials/typography/_blockquotes.scss";
-@import "partials/typography/_misc.scss";
-@import "partials/typography/_code.scss";
-@import "partials/typography/_scoped.scss";
+	// import typography
 
-// import lists
+	@import "partials/typography/_headings.scss";
+	@import "partials/typography/_body-copy.scss";
+//	@import "partials/typography/_copy-classes.scss";
+	@import "partials/typography/_links.scss";
+	@import "partials/typography/_blockquotes.scss";
+	@import "partials/typography/_misc.scss";
+	@import "partials/typography/_code.scss";
+//	@import "partials/typography/_scoped.scss";
 
-@import "partials/lists/_ul.scss";
-@import "partials/lists/_ol.scss";
-@import "partials/lists/_dl.scss";
+	// import lists
 
-// import navigation
+	@import "partials/lists/_ul.scss";
+	@import "partials/lists/_ol.scss";
+	@import "partials/lists/_dl.scss";
 
-@import "partials/navigation/_nav.scss";
-@import "partials/navigation/_pagination.scss";
-@import "partials/navigation/_breadcrumbs.scss";
+	// import navigation
 
-// Components
+	@import "partials/navigation/_nav.scss";
+	@import "partials/navigation/_pagination.scss";
+	@import "partials/navigation/_breadcrumbs.scss";
 
-@import "partials/components/_alerts.scss";
-@import "partials/components/_horizontal-rules.scss";
-@import "partials/components/_labels.scss";
-@import "partials/components/_wells.scss";
+	// Components
 
-// Tables
+//	@import "partials/components/_alerts.scss";
+//	@import "partials/components/_horizontal-rules.scss";
+//	@import "partials/components/_labels.scss";
+//	@import "partials/components/_wells.scss";
 
-@import "partials/tables/_table.scss";
+	// Tables
 
-// Media Object
+	@import "partials/tables/_table.scss";
 
-@import "partials/media-object/_media-object.scss";
+	// Media Object
 
-// Buttons
+	@import "partials/media-object/_media-object.scss";
 
-@import "partials/buttons/_buttons.scss";
+	// Buttons
 
-// Forms
+	@import "partials/buttons/_buttons.scss";
 
-@import "partials/forms/_big-form.scss";
-@import "partials/forms/_search-form.scss";
+	// Forms
 
-// Modules
+	@import "partials/forms/_big-form.scss";
+	@import "partials/forms/_search-form.scss";
 
-@import "partials/modules/_modules.scss";
+	// Modules
 
-// Widgets
+	@import "partials/modules/_modules.scss";
 
-@import "partials/widgets/_widgets.scss";
+	// Widgets
 
-
-
-//////////////// ******** ////////////////
-
-// Scratch, make sure this is at the end of this import file
-
-@import "partials/site-specific/_scratch.scss";
-
-// Shame, shame know your SCSS needs fixing in this file
-
-@import "partials/site-specific/_shame.scss";
+	@import "partials/widgets/_widgets.scss";
 
 
 
+	//////////////// ******** ////////////////
+
+	// Scratch, make sure this is at the end of this import file
+
+	@import "partials/site-specific/_scratch.scss";
+
+	// Shame, shame know your SCSS needs fixing in this file
+
+	@import "partials/site-specific/_shame.scss";
 
 
 
 
 
 
-// Print styles
+
+
+
+	// Print styles
 	@import "base/_print.scss";
 
-// DEBUG MODE
+	// DEBUG MODE
 	$debugMode:         false;
 
 	@import "base/_debug.scss";

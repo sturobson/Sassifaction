@@ -1,6 +1,10 @@
 // Mixins
 	@import "base/_mixins.scss";
 
+// CSS Font Stacks
+
+	@import "base/_fonts.scss";
+
 // Variables
 	@import "_variables.scss";
 
@@ -9,10 +13,6 @@
 
 // Helpers
 	@import "base/_helpers.scss";
-
-// CSS Font Stacks
-
-	@import "base/_fonts.scss";
 
 // -------------------------------------
 //   import the partials

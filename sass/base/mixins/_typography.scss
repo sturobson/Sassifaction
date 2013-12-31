@@ -8,7 +8,7 @@
 
     // if you a line-height is specified in the mixin
     @if $line-height != $doc-line-height and $line-height != 1 {
-      line-height: round($line-height / $size*10000) / 10000;
+      line-height: ceil($size / $line-height) * ($line-height / $size);
     }
 
     // if $line-height == 1
@@ -20,7 +20,7 @@
     // normal $line-height
     // if the line-height is left.
     @else {
-      line-height: round($line-height / $size*10000) / 10000;
+      line-height: ceil($size / $doc-line-height) * ($doc-line-height / $size);
     }
 
     // margin-bottom functions
@@ -43,8 +43,7 @@
       margin-bottom: 0rem + ($doc-line-height / $doc-font-size);
     }
 }
-
 @mixin font-rem($size) {
-	font-size: 0px + $size;
-	font-size: $size / $doc-font-size +rem;
+  font-size: 0px + $size;
+  font-size: $size / $doc-font-size +rem;
 }

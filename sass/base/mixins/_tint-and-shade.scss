@@ -1,0 +1,39 @@
+/*
+
+	Compass style tine & shade functions
+	////////////////////////////////////
+
+	Compass comes with two more colour functions that aren't available in 'bog standard' Sass.
+	These are the option to tint and shade a colour with white and black.
+	Tint & Shade are different to lighten and darken.
+
+	You would use these like you do any other Sass colour function.
+
+		body {
+			background-color: tint(red, 30%);
+		}
+		p {
+			color: shade(red, 70%);
+		}
+
+	Which would give the output
+
+		body {
+			background-color: #ff4c4c;
+		}
+
+		p {
+			color: #4c0000;
+		}
+
+*/
+
+// Add percentage of white to a color
+@function tint($color, $percent){
+  @return mix(white, $color, $percent);
+}
+
+// Add percentage of black to a color
+@function shade($color, $percent){
+  @return mix(black, $color, $percent);
+}

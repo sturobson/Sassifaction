@@ -1,4 +1,49 @@
-// Media Query Mixin for min/max/min-device and max-device width or height
+/*
+
+    A simpler media query mixin
+
+    This mixin allows you to quickly create a media query in your project. With the ability to define the breakpoint in PX (which get's converted into EMs).
+    There's also the ability to define min/max and width/height (with defaults to min-width).
+
+    There's also an option to duplicate the content into a OldIE conditionally classed bit of CSS.
+
+    You would use it like this
+
+        body {
+            @include (280) {
+                background-color: blue;
+            }
+            @include mq(600, false) {
+                background-color: red;
+            }
+            @include mq(1200, true, max) {
+                font-size: 110%;
+            }
+        }
+
+    Which would give you this compiled CSS
+
+        @media (min-width: 17.5em) {
+            body {
+                background-color: blue;
+            }
+        }
+        @media (min-width: 37.5em) {
+            body {
+            background-color: red;
+            }
+        }
+        .lt-ie9 body {
+            font-size: 110%;
+        }
+        @media (max-width: 75em) {
+            body {
+                font-size: 110%;
+            }
+        }
+
+*/
+
 
 @mixin mq($point, $IE9: false, $query1: min, $query2: width) {
     @if $IE9 == true{
@@ -11,8 +56,6 @@
         @content;
     }
 }
-
-
 
 
 // Orientation Media Query Mixin

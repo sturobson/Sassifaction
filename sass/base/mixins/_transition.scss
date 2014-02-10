@@ -1,6 +1,6 @@
-// Cross-browser CSS3 transitions
+// CSS3 Transitions
 
-// @include transition(<values>);
+// @include transition(/values\);
 
 // example
 
@@ -18,8 +18,8 @@
 //	}
 
 @mixin transition ($values) {
-    -webkit-transition: $values;
-       -moz-transition: $values;
-         -o-transition: $values;
-            transition: $values;
+  -webkit-transition: $values;
+     -moz-transition: $values;
+       -o-transition: $values;
+          transition: $values;
 }

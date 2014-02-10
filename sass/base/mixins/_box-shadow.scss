@@ -1,6 +1,6 @@
-// Cross-browser box shadow
+// CSS3 Box Shadow
 
-// @include box-shadow(<values>);
+// @include box-shadow(/values\;
 
 // example
 
@@ -16,6 +16,6 @@
 //	}
 
 @mixin box-shadow ($values) {
-    -webkit-box-shadow: $values; // iOS Safari 3.2 - 4.3, Android 2.1+
-            box-shadow: $values;
+  -webkit-box-shadow: $values;
+          box-shadow: $values;
 }

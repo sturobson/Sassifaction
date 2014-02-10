@@ -19,7 +19,8 @@ a {
 	&:focus {
 
 	}
-	&:active {
+	&:active,
+	[aria-pressed] {
 
 	}
 }

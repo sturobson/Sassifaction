@@ -26,12 +26,7 @@
   }
 
   // Webkit, Mozilla, KHTML and standard CSS3
-  -webkit-border-radius: $radius;
-   -khtml-border-radius: $radius;
-     -moz-border-radius: $radius;
-  		  border-radius: $radius;
-  -webkit-background-clip: padding-box;
-   -khtml-background-clio: padding-box;
-   		 -moz-background-clip: padding;
-  		  background-clip: padding-box;
+  border-radius: $radius;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
 }

@@ -3,12 +3,9 @@
     "version": "0.0.1",
     "main": "dist/Sassifaction",
     "ignore": [
-        "source",
-        "spec",
+        "css",
         ".bowerrc",
         ".gitignore",
-        ".jshintignore",
-        ".jshintrc",
         "bower.json",
         "gruntfile.js",
         "package.json",

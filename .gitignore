@@ -55,3 +55,6 @@ sftp-config*.json
 
 
 mixture.json
+
+# gem
+*.gem

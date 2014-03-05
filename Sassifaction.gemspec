@@ -5,8 +5,8 @@ Gem::Specification.new do |s|
   # Release Specific Information
   # Replace MyExtension with the name you used in your Sassifaction.rb
   # in the mdodule with version and date.
-  s.version = Sassifaction:VERSION
-  s.date = Sassifaction:DATE
+  s.version = "0.0.2"
+  s.date = "2014-03-05"
 
   # Gem Details
   # Replace "Sassifaction" with the name of your extension
@@ -36,7 +36,7 @@ Gem::Specification.new do |s|
   # s.files += ["CHANGELOG.md"]
 
   # Library Files
-  # s.files += Dir.glob("lib/**/*.*")
+  s.files += Dir.glob("lib/**/*.*")
 
   # Sass Files
   # s.files += Dir.glob("stylesheets/**/*.*")

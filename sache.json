@@ -1,0 +1,5 @@
+{
+  "name": "Sassifaction",
+  "description": "An opinionated Sass mixin library and starting point.",
+  "tags": ["mixins", "media-queries", "starting-point", "opinionated"]
+}

@@ -12,9 +12,18 @@
 
 // rem + px fallback
 
-@mixin remit($propery, $size){
-	#{$propery}: #{$size}px;
-	#{$propery}: #{$size/$doc-font-size}rem;
+@mixin remit($property, $sizes) {
+  $rems: ();
+  $pxs: ();
+  
+  @for $i from 1 through length($sizes) {
+    $size: nth($sizes, $i);
+    $pxs: join($pxs, #{$size}px);
+    $rems: join($rems, #{$size/$doc-font-size}rem);
+  }
+  
+  #{$property}: $pxs;
+  #{$property}: $rems;
 }
 
 // making simple squares

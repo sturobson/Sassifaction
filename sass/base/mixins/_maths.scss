@@ -28,13 +28,7 @@
 
 // making simple squares
 
-@mixin size($width, $height: null) {
-	@if $height == null {
-		width: $width;
-		height: $width;
-	}
-	@else {
-		width: $width;
-		height: $height;
-	}
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
 }

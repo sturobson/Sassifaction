@@ -5,8 +5,8 @@ Gem::Specification.new do |s|
   # Release Specific Information
   # Replace MyExtension with the name you used in your Sassifaction.rb
   # in the mdodule with version and date.
-  s.version = "0.0.2"
-  s.date = "2014-03-05"
+  s.version = "0.0.3"
+  s.date = "2014-03-22"
 
   # Gem Details
   # Replace "Sassifaction" with the name of your extension
@@ -39,7 +39,7 @@ Gem::Specification.new do |s|
   s.files += Dir.glob("lib/**/*.*")
 
   # Sass Files
-  # s.files += Dir.glob("stylesheets/**/*.*")
+  s.files += Dir.glob("sass/**/*.*")
 
   # Template Files
   # s.files += Dir.glob("templates/**/*.*")
@@ -55,5 +55,5 @@ Gem::Specification.new do |s|
   # here will make sure the relevant gem and version are installed on the
   # user's system when installing your gem.
   s.add_dependency("sass", [">=3.2.0"])
-  # s.add_dependency("compass", [">= 0.12.1"])
+  s.add_dependency("compass", [">= 0.12.1"])
 end

@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   # Release Specific Information
   # Replace MyExtension with the name you used in your Sassifaction.rb
   # in the mdodule with version and date.
-  s.version = "0.0.3"
+  s.version = "0.0.4-"
   s.date = "2014-03-22"
 
   # Gem Details

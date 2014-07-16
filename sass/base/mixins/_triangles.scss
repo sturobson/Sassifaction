@@ -1,11 +1,11 @@
 //==== Example: @include css-triangle ("up", 10px, #fff);
-@mixin css-triangle ($direction: "down", $size: 20px, $color: #000) {
+@mixin css-triangle ($direction: "down", $width: 20px, $height: 30px, $color: #000) {
 	width: 0;
 	height: 0;
-	border-left: $size solid #{setTriangleColor($direction, "left", $color)};
-	border-right: $size solid #{setTriangleColor($direction, "right", $color)};
-	border-bottom: $size solid #{setTriangleColor($direction, "bottom", $color)};
-	border-top: $size solid #{setTriangleColor($direction, "top", $color)};
+	border-left: $width solid #{setTriangleColor($direction, "left", $color)};
+	border-right: $width solid #{setTriangleColor($direction, "right", $color)};
+	border-bottom: $height solid #{setTriangleColor($direction, "bottom", $color)};
+	border-top: $height solid #{setTriangleColor($direction, "top", $color)};
 }
 
 //Utility function to return the relevant colour depending on what type of arrow it is

@@ -29,13 +29,14 @@
 }
 
 @function trans($color, $percentage) {
-  @return lighten($color, (1-$percentage)*5%);
+  @return lighten($color, (1-$percentage)*50%);
 }
 @function transd($color, $percentage) {
-  @return darken($color, (1-$percentage)*5%);
+  @return darken($color, (1-$percentage)*50%);
 }
-@mixin tran($type, $color, $percentage, $shade: ligthen) {
-  @if $shade == lighten {
+
+@mixin tran($type, $color, $percentage, $darken: n) {
+  @if $darken == n {
     @if $type == color {
       color: trans($color, $percentage);
       color: rgba($color, $percentage);
